@@ -87,4 +87,12 @@ Using `df.info()` on the Titanic dataset, the columns with the most missing valu
 - `embarked`: 2 missing values
 
 `embark_town` also contains 2 missing values.
+## Exercise 3 — Numeric Variability
 
+The coefficient abs(std / mean) was calculated for the numeric columns.
+
+The largest ratio was:
+
+parch = 2.112344
+
+This shows that parch has the largest relative variability among the numeric columns considered. Scaling can matter because numeric features with different ranges and variability can affect distance-based and optimization-based machine learning methods differently.
