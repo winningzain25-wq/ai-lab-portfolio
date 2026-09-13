@@ -1,5 +1,7 @@
-__pycache__/
-*.pyc
 .ipynb_checkpoints/
-.conda/
+__pycache__/
+.venv/
+env/
+data/
+*.pkl
 .env
