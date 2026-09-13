@@ -78,5 +78,13 @@ Dataset inspection script
 Lab report
 
 These files help make the work easier to reproduce and maintain.
+## Exercise 2 — Missing Values
 
+Using `df.info()` on the Titanic dataset, the columns with the most missing values include:
+
+- `deck`: 688 missing values
+- `age`: 177 missing values
+- `embarked`: 2 missing values
+
+`embark_town` also contains 2 missing values.
 
