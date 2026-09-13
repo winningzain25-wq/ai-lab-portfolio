@@ -105,3 +105,25 @@ lab01/exercises
 Three commits were made on this branch before merging it into the main branch.
 
 The branch was then merged into main using a non-fast-forward merge so that the branch and merge history remain visible in the Git graph.
+## Git Log Graph
+
+```text
+*   bfce15d (HEAD -> main) Merge Lab 01 exercises
+|\
+| * a91b393 (lab01/exercises) Document Exercise 4 Git workflow
+| * bcb6115 (origin/lab01/exercises) Add Exercise 3 variability analysis
+| * 49451b5 Add Exercise 2 missing values
+|/
+*   0ea796d (origin/main) Merge Lab 01 homework
+|\
+| * f64bba5 (origin/lab01/homework, lab01/homework) Update reproducibility and ignore rules
+| * b23b802 Add Lab 01 homework dataset reports
+|/
+*   de852c8 Merge branch 'feature/lab01-exercise'
+|\
+| * cbb5483 (feature/lab01-exercise) Add final Lab 01 report update
+| * b104156 Add final Lab 01 report update
+| * 0d76633 Update Lab 01 report
+* | 6bed829 Add Lab 01 Jupyter notebook
+|/
+* 366bbc8 Add Lab 01 environment setup
