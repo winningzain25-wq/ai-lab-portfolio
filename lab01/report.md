@@ -96,3 +96,12 @@ The largest ratio was:
 parch = 2.112344
 
 This shows that parch has the largest relative variability among the numeric columns considered. Scaling can matter because numeric features with different ranges and variability can affect distance-based and optimization-based machine learning methods differently.
+## Exercise 4 — Git Branch and Merge Workflow
+
+The required exercise branch was created as:
+
+lab01/exercises
+
+Three commits were made on this branch before merging it into the main branch.
+
+The branch was then merged into main using a non-fast-forward merge so that the branch and merge history remain visible in the Git graph.
