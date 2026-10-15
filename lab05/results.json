@@ -1,0 +1,140 @@
+{
+  "dataset_rows": 100,
+  "training_rows": 80,
+  "testing_rows": 20,
+  "majority_baseline": 0.5,
+  "target_balance": {
+    "No": 50,
+    "Yes": 50
+  },
+  "three_models": [
+    {
+      "Model": "Logistic Regression",
+      "Test Accuracy": 0.5
+    },
+    {
+      "Model": "Decision Tree",
+      "Test Accuracy": 0.55
+    },
+    {
+      "Model": "Random Forest",
+      "Test Accuracy": 0.5
+    }
+  ],
+  "five_models": [
+    {
+      "Model": "Logistic Regression",
+      "Test Accuracy": 0.5,
+      "CV Mean": 0.6875,
+      "CV Std": 0.15309310892394862
+    },
+    {
+      "Model": "Decision Tree",
+      "Test Accuracy": 0.55,
+      "CV Mean": 0.6875,
+      "CV Std": 0.11858541225631422
+    },
+    {
+      "Model": "Random Forest",
+      "Test Accuracy": 0.5,
+      "CV Mean": 0.675,
+      "CV Std": 0.1446979612848778
+    },
+    {
+      "Model": "KNeighborsClassifier",
+      "Test Accuracy": 0.6,
+      "CV Mean": 0.65,
+      "CV Std": 0.09354143466934853
+    },
+    {
+      "Model": "SVC",
+      "Test Accuracy": 0.55,
+      "CV Mean": 0.675,
+      "CV Std": 0.1446979612848778
+    }
+  ],
+  "family_proxy_comparison": [
+    {
+      "Model": "Logistic Regression",
+      "Test Accuracy Without": 0.5,
+      "Test Accuracy With": 0.5,
+      "Accuracy Delta": 0.0
+    },
+    {
+      "Model": "Decision Tree",
+      "Test Accuracy Without": 0.55,
+      "Test Accuracy With": 0.55,
+      "Accuracy Delta": 0.0
+    },
+    {
+      "Model": "Random Forest",
+      "Test Accuracy Without": 0.5,
+      "Test Accuracy With": 0.5,
+      "Accuracy Delta": 0.0
+    }
+  ],
+  "tuning": [
+    {
+      "Model": "SVC",
+      "Tuned CV Mean": 0.75,
+      "Best Parameters": {
+        "model__C": 0.1,
+        "model__kernel": "linear"
+      }
+    },
+    {
+      "Model": "Logistic Regression",
+      "Tuned CV Mean": 0.725,
+      "Best Parameters": {
+        "model__C": 0.1
+      }
+    },
+    {
+      "Model": "Decision Tree",
+      "Tuned CV Mean": 0.7125,
+      "Best Parameters": {
+        "model__max_depth": 2,
+        "model__min_samples_leaf": 1
+      }
+    },
+    {
+      "Model": "Random Forest",
+      "Tuned CV Mean": 0.7125,
+      "Best Parameters": {
+        "model__max_depth": 3,
+        "model__min_samples_leaf": 1,
+        "model__n_estimators": 50
+      }
+    },
+    {
+      "Model": "KNeighborsClassifier",
+      "Tuned CV Mean": 0.675,
+      "Best Parameters": {
+        "model__n_neighbors": 5,
+        "model__weights": "distance"
+      }
+    }
+  ],
+  "winner": "SVC",
+  "winner_parameters": {
+    "model__C": 0.1,
+    "model__kernel": "linear"
+  },
+  "winner_cv": 0.75,
+  "winner_test_accuracy": 0.65,
+  "roc_auc": 0.615,
+  "confusion_matrix": [
+    [
+      8,
+      2
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n          No       0.62      0.80      0.70        10\n         Yes       0.71      0.50      0.59        10\n\n    accuracy                           0.65        20\n   macro avg       0.66      0.65      0.64        20\nweighted avg       0.66      0.65      0.64        20\n",
+  "manual_cv_mean": 0.75,
+  "pipeline_cv_mean": 0.75,
+  "demo_prediction": "Yes"
+}
